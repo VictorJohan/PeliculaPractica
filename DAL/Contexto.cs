@@ -12,7 +12,9 @@ namespace RegistroPeliculas.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Date Resource= DATA\Peliculas.db");
+            optionsBuilder.UseSqlite(@"Data Source= DATA\Peliculas.db");
         }
+
+      
     }
 }
